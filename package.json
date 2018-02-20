@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "description": "This is a website for pets",
   "author": "Mina Azimi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
 }
