@@ -1,1 +1,1 @@
-#This is a repository for a Pet Shop website
+#This is a Pet Shop website
