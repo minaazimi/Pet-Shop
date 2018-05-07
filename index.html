@@ -13,7 +13,6 @@
   <title>Loan Worsheet</title>
 </head>
 <body>
-
   <header>
     <div class="container border">
       <div class="row border">
@@ -64,20 +63,20 @@
    </div><!-- row -->
 
    <div class="row border">
-    <div class="col-8 border"><!-- left main column starts-->
+    <div class="col-12 col-lg-8 border"><!-- left main column starts-->
        <div class="row"><!-- Property details section starts -->
-          <div class="col-5">
+          <div class="col-lg-5">
             <form class="form-inline">
                 <div class="form-group row">
                   <fieldset style="padding-left: 16px;">
                     <legend class="LWheaders">Property Details (2)</legend>
 
                       <div class="form-group row">
-                        <div class="col-6">
+                        <div class="col col-lg-6">
                           <label for="LWpropertyValue" class=" LWlabel">Property Value (1 of 2)</label>
                         </div>
-                        <div class="col-6">
-                          <input type="number" class="form-control LWinput" id="LWpropertyValue" placeholder="$0">
+                        <div class="col col-lg-6">
+                          <input type="number" class="form-control LWpropertyInput" id="LWpropertyValue" placeholder="$0">
                         </div>
                         <div class="LWlinks">
                           <span><a href="#">Show Properties (2)<i class="fas fa-chevron-down"></i></a></span>
@@ -85,11 +84,11 @@
                       </div><!-- row ends -->
 
                       <div class="form-group row">
-                        <div class="col-6 mt-20">
+                        <div class="col col-lg mt-20">
                           <labelc class="LWlabel" for="LWstate">State</label>
                         </div>
-                        <div class="col-6">
-                            <select id="LWstate" class="form-control LWinput">
+                        <div class="col col-lg">
+                            <select id="LWstate" class="form-control LWpropertyInput">
                               <option selected>VIC</option>
                               <option>...</option>
                             </select>
@@ -97,11 +96,11 @@
                       </div>
 
                     <div class="form-group row">
-                      <div class="col-6">
+                      <div class="col col-lg">
                         <label class="LWlabel" for="LWprimaryPurpose">Primary Purpose</label>
                       </div>
-                      <div class="col-6">
-                        <select id="LWprimaryPurpose" class="form-control LWinput">
+                      <div class="col col-lg">
+                        <select id="LWprimaryPurpose" class="form-control LWpropertyInput">
                           <option selected>Purchase</option>
                           <option>...</option>
                         </select>
@@ -109,11 +108,11 @@
                     </div>
 
                     <div class="form-group row">
-                      <div class="col-6">
+                      <div class="col col-lg">
                         <label class="LWlabel" for="LWpropertyUse">Property Use</label>
                       </div>
-                      <div class="col-6">
-                        <select id="LWpropertyUse" class="form-control LWinput">
+                      <div class="col col-lg">
+                        <select id="LWpropertyUse" class="form-control LWpropertyInput">
                           <option selected>Owner Occupied</option>
                           <option>...</option>
                         </select>
@@ -121,11 +120,11 @@
                     </div>
 
                     <div class="form-group row">
-                      <div class="col-6">
+                      <div class="col col-lg">
                         <label class="LWlabel" for="LWpropertyStatus">Property Status</label>
                       </div>
-                      <div class="col-6">
-                        <select id="LWpropertyStatus" class="form-control LWinput">
+                      <div class="col col-lg">
+                        <select id="LWpropertyStatus" class="form-control LWpropertyInput">
                           <option selected>Choose...</option>
                           <option>...</option>
                         </select>
@@ -133,11 +132,11 @@
                     </div>
 
                     <div class="form-group row">
-                      <div class="col-6">
+                      <div class="col col-lg">
                         <label class="LWlabel" for="LWconcessio">Concession</label>
                       </div>
-                      <div class="col-6">
-                        <select id="LWconcession" class="form-control LWinput">
+                      <div class="col col-lg">
+                        <select id="LWconcession" class="form-control LWpropertyInput">
                           <option selected>None</option>
                           <option>...</option>
                         </select>
@@ -145,21 +144,22 @@
                     </div>
                   </fieldset>
                 </div>
-               </form>
-             </div> <!-- col ends -->
-             <div class="col-1 LWborderRight">
-             </div>
-          <div class="col-6"> <!-- Loan Details(2) section starts -->
+              </form>
+          </div> <!-- col ends -->
+          <div class="col-lg-1 LWborderRight">
+          </div>
+
+          <div class="col-lg-6"> <!-- Loan Details(2) section starts -->
             <form class="form-inline LWborderBottom" action="" method="post">
               <fieldset>
                 <legend class="LWheaders">Loan Details (2)</legend>
 
                   <div class="form-group row">
-                    <div class="col-6">
+                    <div class="col">
                       <label class="LWlabel" for="LWlender">Lender</label>
                     </div>
-                    <div class="col-6">
-                      <select id="LWlender" class="form-control LWinput">
+                    <div class="col">
+                      <select id="LWlender" class="form-control LWloanInput">
                         <option selected>Loan Ave</option>
                         <option>...</option>
                       </select>
@@ -170,11 +170,11 @@
                   </div>
 
                   <div class="form-group row">
-                    <div class="col-6">
+                    <div class="col">
                       <label class="LWlabel" for="LWloanAmount">Loan Amount</label>
                     </div>
-                    <div class="col-6">
-                      <input id="LWloanAmount" type="number" class="form-control LWinput" placeholder="$0">
+                    <div class="col">
+                      <input id="LWloanAmount" type="number" class="form-control LWloanInput" placeholder="$0">
                        <div class="form-group form-check">
                           <input type="checkbox" class="form-check-input" id="LWcalculate">
                           <label readonly class="form-check-label" for="LWcalculate">Calculate</label>
@@ -190,11 +190,11 @@
                 <legend class="LWheaders">Borrower</legend>
 
                   <div class="form-group row">
-                    <div class="col-6">
+                    <div class="col">
                       <label class="LWlabel" for="LWborrowerType">Borrower Type</label>
                     </div>
-                    <div class="col-6">
-                      <select id="LWborrowerType" class="form-control LWinput">
+                    <div class="col">
+                      <select id="LWborrowerType" class="form-control LWborrower">
                         <option selected>Person</option>
                         <option>...</option>
                       </select>
@@ -202,29 +202,29 @@
                   </div>
 
                   <div class=" form-group row">
-                    <div class="col-6">
+                    <div class="col">
                       <label class="LWlabel" for="LWbuyerContribution">Buyer's Contribution</label>
                     </div>
-                    <div class="col-6">
-                      <input type="number" class="form-control LWinput" id="LWbuyerContribution" placeholder="$0">
+                    <div class="col">
+                      <input type="number" class="form-control LWborrower" id="LWbuyerContribution" placeholder="$0">
                     </div>
                   </div>
 
                   <div class="form-group row">
-                    <div class="col-6">
+                    <div class="col">
                       <label class="LWlabel" for="LWcosolidationDebt">Consolidated Debt</label>
                     </div>
-                    <div class="col-6">
-                      <input type="number" class="form-control LWinput" id="LWcosolidationDebt" placeholder="$0">
+                    <div class="col">
+                      <input type="number" class="form-control LWborrower" id="LWcosolidationDebt" placeholder="$0">
                     </div>
                   </div>
 
                   <div class="form-group row">
-                    <div class="col-6">
+                    <div class="col">
                       <label class="LWlabel" for="LWfees">Fees</label>
                     </div>
-                    <div class="col-6">
-                      <input type="number" class="form-control LWinput" id="LWfees" placeholder="$0">
+                    <div class="col">
+                      <input type="number" class="form-control LWborrower" id="LWfees" placeholder="$0">
                     </div>
                   </div>
               </fieldset>
@@ -237,78 +237,71 @@
          <input type="radio" name="Borrower" value="fisrt home buyers with family"> First Home Buyers With Family<br>
          <input type="radio" name="Borrower" value="pension/concenssion card"> Pension/Concenssion Card
        </form> -->
-  </div><!-- Property details section ends -->
+    </div><!-- Property details section ends -->
   </div><!-- left main column ends -->
 
-  <div class="col-4 border bg-gray"><!-- right main column starts-->
-      <table class="table table-hover border">
-        <tbody>
-          <thead>
-            <tr>
-              <th class="LWheaders">Summary</th>
-            </tr>
-          </thead>
-          <!-- <table class="table table-hover border"> -->
-            <tr>
-              <td colspan="6">State Fees &amp; Charges <a href="#" class="badge badge-Primary">Details</a></td>
-              <td>$1,297</td>
-            </tr>
-            <tr>
-              <td colspan="6">Loan Establishment Costs</td>
-              <td>$300,000</td>
-            </tr>
-            <tr>
-             <td colspan="6">Total Securerities</td>
-             <td>$300,000</td>
-            </tr>
-            <tr>
-              <td colspan="6">Lenders Mortgage Insurance</td>
-              <td>$1,297</td>
-            </tr>
-          <!-- </table> -->
-            <tr>
-              <td colspan="7">
-                <form class="form-group form-inline" action="" method="get">
-                  <input type="checkbox" name="Mortgage Insurance" value="edit"> Edit<br>
-                  <input type="checkbox" name="Mortgage Insurance" value="capitalize" checked> Capitalize<br>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="6">Total Monthly Repayment</td>
-              <td>$2,400</td>
-            </tr>
-
-          <tr>
-            <td colspan="6">Final Funds Required</td>
-            <td>$890,297</td>
-          </tr>
-          <tr>
-            <td colspan="6">Final Buyer's Contribution</td>
-            <td>$0</td>
-          </tr>
-          <tr>
-            <td colspan="6">Final Loan Amount</td>
-            <td>$1,297</td>
-          </tr>
-          <tr>
-            <td colspan="6">Final LVR</td>
-            <td>$0</td>
-          </tr>
-          <tr>
-            <td colspan="6">Surplus/Shortfall</td>
-            <td>$22,046</td>
-          </tr>
-        </tbody>
-      </table>
-      </div><!-- right main column ends-->
-    </div> <!--row ends -->
-  </div><!-- container -->
-
-
-
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</body>
+  <div class="col-12 col-lg-4 border bg-gray"><!-- right main column starts-->
+          <table class="table table-hover border">
+            <tbody>
+              <thead>
+                <tr>
+                  <th class="LWheaders">Summary</th>
+                </tr>
+              </thead>
+              <!-- <table class="table table-hover border"> -->
+              <tr>
+                <td colspan="6">State Fees &amp; Charges <a href="#" class="badge badge-Primary">Details</a></td>
+                <td>$1,297</td>
+              </tr>
+              <tr>
+                <td colspan="6">Loan Establishment Costs</td>
+                <td>$300,000</td>
+              </tr>
+              <tr>
+               <td colspan="6">Total Securerities</td>
+               <td>$300,000</td>
+              </tr>
+              <tr>
+                <td colspan="6">Lenders Mortgage Insurance</td>
+                <td>$1,297</td>
+              </tr>
+              <!-- </table> -->
+              <tr>
+                <td colspan="7">
+                  <form class="form-group form-inline" action="" method="get">
+                    <input type="checkbox" name="Mortgage Insurance" value="edit"> Edit<br>
+                    <input type="checkbox" name="Mortgage Insurance" value="capitalize" checked> Capitalize<br>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="6">Total Monthly Repayment</td>
+                <td>$2,400</td>
+              </tr>
+              <tr>
+                <td colspan="6">Final Funds Required</td>
+                <td>$890,297</td>
+              </tr>
+              <tr>
+                <td colspan="6">Final Buyer's Contribution</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td colspan="6">Final Loan Amount</td>
+                <td>$1,297</td>
+              </tr>
+              <tr>
+                <td colspan="6">Final LVR</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td colspan="6">Surplus/Shortfall</td>
+                <td>$22,046</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- right main column ends-->
+      </div> <!--row ends -->
+    </div><!-- container -->
+  </body>
 </html>
