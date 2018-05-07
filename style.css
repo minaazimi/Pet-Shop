@@ -19,7 +19,7 @@ input, textarea, select, label {
     float: left;
     font-weight: 600;
 }
-.LWinput {
+.LWpropertyInput {
     width: 12em !important;
     padding: 8px 3px;
     text-align: right;
@@ -32,14 +32,42 @@ input, textarea, select, label {
     font-size: 0.875em;
     font-weight: 600;
 }
-
+.LWloanInput {
+  width: 12em !important;
+  padding: 8px 3px;
+  text-align: right;
+  margin-left: -13px;
+  margin-bottom: 14px;
+  margin-right: 0;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+.LWborrower {
+  width: 12em !important;
+  padding: 8px 3px;
+  text-align: right;
+  margin-left: 5px;
+  margin-bottom: 14px;
+  margin-right: 0;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 0.875em;
+  font-weight: 600;
+}
 .LWlinks {
     float: right;
     font-size: 0.75em;
     font-weight: bold;
     margin-top: -12px;
+    margin-bottom: 30px;
 }
-
+.LWloanDetails input select{
+  margin-left: 24px;
+}
 span a {
   color: #006599;
 }
@@ -78,6 +106,26 @@ span a {
     line-height: 24px;
     margin-left: 41px;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .LWpropertyInput {
+    width: 10em !important;
+    margin-left: -25px;
+  }
+  .LWloanInput {
+    width: 10em !important;
+    margin-left: 22px;
+}
+  .LWborrower {
+    width: 10em !important;
+  }
+  .LWborrower, .LWpropertyInput, .LWloanInput {
+
+  }
+
+}
+
 /*
 .LWheader-result {
     font-size:
