@@ -1,0 +1,84 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Loan work sheet header section
+--------------------------------- */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: 100%;
+}
+input, textarea, select, label {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.LWlabel {
+    font-size: 0.75em;
+    /* vertical-align: middle; */
+    float: left;
+    font-weight: 600;
+}
+.LWinput {
+    width: 12em !important;
+    padding: 8px 3px;
+    text-align: right;
+    margin-left: -34px;
+    margin-bottom: 14px;
+    margin-right: 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.LWlinks {
+    float: right;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-top: -12px;
+}
+
+span a {
+  color: #006599;
+}
+.LWheaders {
+    font-size: 1.125em;
+    color: #262626;
+    font-weight: 600;
+    line-height: 24px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+}
+.LWborderBottom {
+  border-bottom: 1px dashed #DDDDDD;
+}
+.LWborderRight {
+  border-right: 1px dashed #DDDDDD;
+  margin-top: 23px;
+}
+ #LWbitmap {
+    float: left;
+    font-size: 1.6rem;
+    line-height: 52px;
+}
+
+.LWheader h1{
+    color: #262626;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 17px;
+    margin-left: 38px;
+}
+.LWheader-a-j {
+    color: #262626;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 24px;
+    margin-left: 41px;
+}
+/*
+.LWheader-result {
+    font-size:
+} */
