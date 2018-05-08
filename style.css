@@ -1,76 +1,42 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: rgba(255,255,255,0);
 }
 
-/* Loan work sheet header section
+/* Loan work sheet
+---------------------------------
 --------------------------------- */
+
 input, textarea, select, button {
   font-family: inherit;
   font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-input, textarea, select, label {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+/* fieldset {
+  width: 100%;
+} */
+.LWboxShadow {
+  	box-shadow: 0 2px 10px 0 rgba(210,210,210,0.5);
 }
 .LWlabel {
     font-size: 0.75em;
-    /* vertical-align: middle; */
     float: left;
     font-weight: 600;
-}
-.LWpropertyInput {
-    width: 12em !important;
-    padding: 8px 3px;
-    text-align: right;
-    margin-left: -34px;
-    margin-bottom: 14px;
-    margin-right: 0;
-    border: 1px solid #CCCCCC;
-    border-radius: 3px;
-    background-color: #fff;
-    font-size: 0.875em;
-    font-weight: 600;
-}
-.LWloanInput {
-  width: 12em !important;
-  padding: 8px 3px;
-  text-align: right;
-  margin-left: -13px;
-  margin-bottom: 14px;
-  margin-right: 0;
-  border: 1px solid #CCCCCC;
-  border-radius: 3px;
-  background-color: #fff;
-  font-size: 0.875em;
-  font-weight: 600;
-}
-.LWborrower {
-  width: 12em !important;
-  padding: 8px 3px;
-  text-align: right;
-  margin-left: 5px;
-  margin-bottom: 14px;
-  margin-right: 0;
-  border: 1px solid #CCCCCC;
-  border-radius: 3px;
-  background-color: #fff;
-  font-size: 0.875em;
-  font-weight: 600;
 }
 .LWlinks {
     float: right;
     font-size: 0.75em;
     font-weight: bold;
-    margin-top: -12px;
-    margin-bottom: 30px;
-}
-.LWloanDetails input select{
-  margin-left: 24px;
+    margin-top: -8%;
+    margin-bottom: 18%;
 }
 span a {
-  color: #006599;
+    color: #006599;
 }
+/* Header/title section
+--------------------------------- */
 .LWheaders {
     font-size: 1.125em;
     color: #262626;
@@ -79,25 +45,28 @@ span a {
     padding-top: 28px;
     padding-bottom: 20px;
 }
-.LWborderBottom {
-  border-bottom: 1px dashed #DDDDDD;
+#LWbitmap {
+   float: left;
+   font-size: 1.6rem;
+   line-height: 72px;
 }
-.LWborderRight {
-  border-right: 1px dashed #DDDDDD;
-  margin-top: 23px;
+.LWtitle {
+    margin-left: -15px;
+    margin-top: 27px;
+    margin-bottom: 9px;
 }
- #LWbitmap {
-    float: left;
-    font-size: 1.6rem;
-    line-height: 52px;
-}
-
 .LWheader h1{
     color: #262626;
-    font-size: 1rem;
+    font-size: 0.75em;
     font-weight: 600;
     line-height: 17px;
     margin-left: 38px;
+    padding-top: 15px;
+}
+.LW-a-j h2 {
+    font-size: 1.125em;
+    margin-left: 39px;
+    font-weight: 600;
 }
 .LWheader-a-j {
     color: #262626;
@@ -107,22 +76,173 @@ span a {
     margin-left: 41px;
 }
 
+/* Scenario section
+--------------------------------- */
+
+/* Property Details (2) section
+--------------------------------- */
+.LWpropertyMarginLabel {
+  margin-top: -5%;
+}
+.LWpropertyInput {
+    width: 12em !important;
+    padding: 8px 3px;
+    text-align: right;
+    margin-left: 16%;
+    margin-bottom: 10%;
+    margin-right: 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+.LWborderRight {
+    border-right: 1px dashed #DDDDDD;
+    margin-top: 23px;
+}
+/* Loan Details (2) section
+--------------------------------- */
+.LWloanInput {
+    width: 12em !important;
+    padding: 8px 3px;
+    text-align: right;
+    margin-left: -13px;
+    margin-bottom: 14px;
+    margin-right: 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+.LWmarginLabelLoan {
+    margin-top: -50px;
+}
+.LWloanDetails input select{
+    margin-left: 24px;
+}
+.LWborderBottom {
+    border-bottom: 1px dashed #DDDDDD;
+}
+
+
+/* Borrower section
+--------------------------------- */
+.LWborrower {
+    width: 12em !important;
+    padding: 8px 3px;
+    text-align: right;
+    margin-left: 31px;
+    margin-bottom: 9px;
+    margin-right: 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+.LWmarginb {
+  margin-bottom: 3% !important;
+}
+.LWborrowerInput {
+  width: 10.5em !important;
+  margin-left: -9px;
+}
+.LWeditLinks {
+    float: right;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding-right: 0.875em;
+}
+
+
+/* Summary section
+--------------------------------- */
+
+/* Summary Table  */
+.LWsummaryheader h3 {
+    font-size: 1.125em;
+    color: #222;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding-bottom: 0.9375em;
+    padding-top: 0.6875em;
+}
+.LWsummaryTable {
+    background-color: #DDE3E5;
+  	box-shadow: 0 2px 10px 0 rgba(210,210,210,0.5);
+    border-radius: 0 4px 4px 0;
+    padding: 17px;
+}
+.LWsummaryTable tr {
+    background-color: #FFFFFF;
+  	box-shadow: 0 2px 10px 0 rgba(210,210,210,0.5);
+    font-size: 0.875em;
+}
+td[data-type="number"] {
+    font-weight: bold;
+}
+tr:hover {
+    background-color: #DDE3E5;
+}
+#LWtotalRepayment {
+    border: 14px solid #DDE3E5;
+}
+
+/* media queries
+--------------------------------- */
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
   .LWpropertyInput {
     width: 10em !important;
-    margin-left: -25px;
+    margin-left: -13% !important;
   }
   .LWloanInput {
     width: 10em !important;
     margin-left: 22px;
 }
   .LWborrower {
-    width: 10em !important;
+    width: 12em !important;
+    margin-left: 4px;
   }
-  .LWborrower, .LWpropertyInput, .LWloanInput {
+  .LWeditLinks {
+    margin-top: -30px;
+  }
+  .LWcalculate {
+    margin-right: -87px;
+  }
+  .LWmarginLabel {
+    margin-top: 8px;
+  }
+  .LWmarginLabelLoan {
+    margin-top: 11px;
+  }
+  .LWborrowerBorder {
+    border-bottom: 1px dashed #DDD;
+    margin-bottom: 24px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .LWpropertyBorder {
+    border-bottom: 1px dashed #DDD;
+  }
+  .LWloanmargin {
+    margin: -8px -14px;
+  }
+  .LWborderRight {
+    margin-top: 0px;
+    border-width: 0px;
+  }
+  .LWpropertyMarginLabel {
+    margin-top: 4%;
+  }
+}
 
-  }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+
 
 }
 
