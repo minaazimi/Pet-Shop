@@ -16,321 +16,315 @@
 
 <body>
 
-  <header>
+    <!--  responsive behaviour   -->
+    <header role="banner">
       <div class="container">
-        <!-- <div class="row "> -->
-         <div class="col col-md-6 border">
-           <div class="">
-             <i id="LWbitmap" class="fas fa-edit"></i>
-           </div>
-           <div class="LWheader">
-             <h1> Loan Worksheet</h1>
-           </div>
-           <div class="LW-a-j">
-             <h2 >A.J. Basics Purchase INV $528000</h2>
-           </div>
-          </div> <!--col ends -->
-          <div class="col col-m-6 border">
+        <div class="row">
+          <div class="col-8">
+            <i id="pm-LWbitmap" class="fas fa-edit"></i>
+            <div class="pm-LWheader">
+              <h1> Loan Worksheet</h1>
+            </div>
+            <div class="pm-LW-a-j">
+              <h2>A.J. Basics Purchase INV $528000</h2>
+            </div>
+          </div>
+          <div class="col-4">
             <!-- right logoes should be here!  -->
           </div>
-          <!--</div> row ends -->
-            <div class="col LWtitle">
-               <p>Loan Worksheet results can be accessed in Preliminary Assessment.</p>
+          <div class="col pm-LWtitle">
+             <p>Loan Worksheet results can be accessed in Preliminary Assessment.</p>
+          </div>
+        </div><!-- row ends  -->
+      </div><!-- container ends  -->
+
+      <!-- Loan Worksheet Scenario section -->
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <label for="pm-LWscenario">Scenario</label>
+              <select id="pm-LWscenario" class="form-control">
+                <option selected>Scenario 1</option>
+                <option>...</option>
+              </select>
             </div>
-        <!-- </div>  row ends -->
-       </div> <!--container ends -->
-     </header>
-
-  <!-- Loan Worksheet Scenario section -->
-    <div class="container border">
-      <div class="row">
-       <div class="col-12 col-md-8">
-         <div class="row">
-            <div class="col-6 col-md-3">
-              <label for="">Scenario</label>
+            <!-- Loan Worksheet Scenario section -->
+            <!-- Clone/Add buttons start -->
+            <div class="col-sm-4">
+              <button type="button" class="btn border bg-white border-right-2">Clone</button>
+              <button type="button" class="btn border bg-white">Add</button>
             </div>
-            <div class="col-6 col-md-9">
-              <div class="btn-group">
-                <div class="">
-                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Scenario 1
-                </button>
-              </div>
-              <div class="dropdown-menu dropdown-menu-right">
-                 <button class="dropdown-item" type="button">Action</button>
-                 <button class="dropdown-item" type="button">Another action</button>
-                 <button class="dropdown-item" type="button">Something else here</button>
-              </div>
-            </div>
-          </div><!--  col ends -->
-         </div> <!-- row ends -->
-       </div> <!-- Loan Worksheet Scenario section end  -->
-       <div class="col-12 col-md-4 "> <!-- Clone/Add buttons start -->
-             <button type="button" class="btn border bg-white border-right-2">Clone</button>
-             <button type="button" class="btn border bg-white">Add</button>
-       </div><!-- Clone/Add buttons ends -->
-     </div><!-- row -->
-    </div><!-- container -->
+            <!-- Clone/Add buttons ends -->
+          </div><!-- row ends  -->
+      </div><!-- container ends  -->
+    </header>
 
-    <div class="container">
-     <div class="row LWboxShadow border">
-      <div class="col-12 col-lg-8"><!-- left main column starts-->
-         <div class="row"><!-- Property details section starts -->
-            <div class=" col-lg-5">
-              <form class="form-inline">
-                  <div class="form-group row">
-                    <fieldset class="LWpropertyBorder" style="padding-left: 16px;">
-                      <legend class="LWheaders">Property Details (2)</legend>
+    <!-- Main section starts  -->
+    <main role="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-4 col-md-6 pm-LWborderRight">
 
-                        <div class="form-group row">
-                          <div class="col col-sm-6 col-lg-6 LWpropertyMarginLabel">
-                            <label for="LWpropertyValue" class=" LWlabel">Property Value (1 of 2)</label>
-                          </div>
-                          <div class="col col-sm-6 col-lg-6">
-                            <input type="number" style="margin-left: 5%;" class="form-control LWpropertyInput" id="LWpropertyValue" placeholder="$0">
-                          </div>
-                        </div><!-- row ends -->
+            <!-- Property Details(2) section starts -->
+              <form class="form-inline form-group">
+                <fieldset class="pm-LWpropertyBorder">
+                  <legend class="pm-LWheaders">Property Details (2)</legend>
 
-                        <div class="form-group row">
-                          <div class="col col-lg-5">
-                            <label for="LWshowProperty" class=" " hidden>Show Properties (2)</label>
-                          </div>
-                          <div class="col col-lg-7 ">
-                            <span id="LWshowProperty" class="LWlinks"><a href="#">Show Properties (2)<i class="fas fa-chevron-down"></i></a></span>
-                          </div>
-                        </div>
-
-                        <div class="form-group row">
-                          <div class="col col-lg LWpropertyMarginLabel">
-                            <labelc class="LWlabel" for="LWstate">State</label>
-                          </div>
-                          <div class="col col-lg">
-                              <select id="LWstate" class="form-control LWpropertyInput">
-                                <option selected>VIC</option>
-                                <option>...</option>
-                              </select>
-                          </div>
-                        </div>
-
-                      <div class="form-group row">
-                        <div class="col col-lg LWpropertyMarginLabel">
-                          <label class="LWlabel" for="LWprimaryPurpose">Primary Purpose</label>
-                        </div>
-                        <div class="col col-lg">
-                          <select id="LWprimaryPurpose" class="form-control LWpropertyInput">
-                            <option selected>Purchase</option>
-                            <option>...</option>
-                          </select>
-                        </div>
+                    <div class="row">
+                      <div class="col-6 pm-LWpropertyMarginLabel">
+                          <label for="pm-LWpropertyValue" class=" pm-LWlabel">Property Value (1 of 2)</label>
                       </div>
-
-                      <div class="form-group row">
-                        <div class="col col-lg LWpropertyMarginLabel">
-                          <label class="LWlabel" for="LWpropertyUse">Property Use</label>
-                        </div>
-                        <div class="col col-lg">
-                          <select id="LWpropertyUse" class="form-control LWpropertyInput">
-                            <option selected>Owner Occupied</option>
-                            <option>...</option>
-                          </select>
-                        </div>
+                      <div class="col-6">
+                        <input type="number" class="form-control pm-LWpropertyInput" id="pm-LWpropertyValue" placeholder="$0">
                       </div>
+                    </div><!-- row -->
 
-                      <div class="form-group row">
-                        <div class="col col-lg LWpropertyMarginLabel">
-                          <label class="LWlabel" for="LWpropertyStatus">Property Status</label>
-                        </div>
-                        <div class="col col-lg">
-                          <select id="LWpropertyStatus" class="form-control LWpropertyInput">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <label for="pm-LWshowProperty" class=" " hidden>Show Properties (2)</label>
                       </div>
-
-                      <div class="form-group row">
-                        <div class="col col-lg LWpropertyMarginLabel">
-                          <label class="LWlabel" for="LWconcessio">Concession</label>
-                        </div>
-                        <div class="col col-lg">
-                          <select id="LWconcession" class="form-control LWpropertyInput">
-                            <option selected>None</option>
-                            <option>...</option>
-                          </select>
-                        </div>
+                      <div class="col-6 pm-LWpropertyLink">
+                        <span id="pm-LWshowProperty" class=""><a href="#">Show Properties (2) <i class="fas fa-chevron-down"></i></a></span>
                       </div>
-                    </fieldset>
-                  </div>
-                </form>
-            </div> <!-- col ends -->
-            <div class="col-lg-1 LWborderRight">
-            </div>
+                    </div><!-- row -->
 
-            <div class="col-lg-6"> <!-- Loan Details(2) section starts -->
-              <form class="form-inline LWborderBottom" action="" method="post">
+                    <div class="row">
+                      <div class="col-6 pm-LWpropertyMarginLabel">
+                        <labelc class="pm-LWlabel" for="pm-LWstate">State</label>
+                      </div>
+                      <div class="col-6">
+                        <select id="pm-LWstate" class="form-control pm-LWpropertyInput">
+                          <option selected>VIC</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div><!-- row -->
+
+                    <div class="row">
+                      <div class="col-6 pm-LWpropertyMarginLabel">
+                        <label class="pm-LWlabel" for="pm-LWprimaryPurpose">Primary Purpose</label>
+                      </div>
+                      <div class="col-6">
+                        <select id="pm-LWprimaryPurpose" class="form-control pm-LWpropertyInput">
+                          <option selected>Purchase</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div><!-- row -->
+
+                    <div class="row">
+                      <div class="col-6 pm-LWpropertyMarginLabel">
+                        <label class="pm-LWlabel" for="pm-LWpropertyUse">Property Use</label>
+                      </div>
+                      <div class="col-6">
+                        <select id="pm-LWpropertyUse" class="form-control pm-LWpropertyInput">
+                          <option selected>Owner Occupied</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div><!-- row -->
+
+                    <div class="row">
+                      <div class="col-6 pm-LWpropertyMarginLabel">
+                        <label class="pm-LWlabel" for="pm-LWpropertyStatus">Property Status</label>
+                      </div>
+                      <div class="col-6">
+                        <select id="pm-LWpropertyStatus" class="form-control pm-LWpropertyInput">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div><!-- row -->
+
+                    <div class="row">
+                      <div class="col-6 pm-pm-LWpropertyMarginLabel">
+                        <label class="pm-LWlabel" for="pm-LWconcessio">Concession</label>
+                      </div>
+                      <div class="col-6">
+                        <select id="pm-LWconcession" class="form-control pm-LWpropertyInput">
+                          <option selected>None</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div><!-- row -->
+              </fieldset>
+            </form>
+          </div><!--1st col ends -->
+          <!-- Property Details(2) section ends -->
+
+
+          <!-- Loan Details(2) section strats -->
+            <div class="col-12 col-xl-4 col-md-6  ">
+              <form class="form-inline pm-LWborderBottom" action="" method="post">
                 <fieldset>
-                  <legend class="LWheaders">Loan Details (2)</legend>
+                  <legend class="pm-LWheaders">Loan Details (2)</legend>
 
-                    <div class="form-group row LWloanmargin">
-                      <div class="col LWmarginLabelLoan">
-                        <label class="LWlabel" for="LWlender">Lender</label>
+                    <div class="row">
+                      <div class="col-6 pm-LWmarginLabelLoan">
+                        <label class="pm-LWlabel" for="pm-LWlender">Lender</label>
                       </div>
-                      <div class="col">
-                        <select id="LWlender" class="form-control LWloanInput">
+                      <div class="col-6">
+                        <select id="pm-LWlender" class="form-control pm-LWloanInput">
                           <option selected>Loan Ave</option>
                           <option>...</option>
                         </select>
-                        <div class="LWlinks">
-                          <span><a href="#">Show Properties (2) <i class="fas fa-chevron-down"></i></a></span>
+                      </div>
+                    </div><!-- row -->
+
+                    <div class="row">
+                      <div class="col-6">
+                        <label class="pm-LWlabel" for="pm-LWshowLoans" hidden>Show Loans (2)</label>
+                      </div>
+                      <div class="col-6 pm-LWloanLink">
+                        <span id="pm-LWshowLoans"><a href="#">Show Loans (2) <i class="fas fa-chevron-down"></i></a></span>
+                      </div>
+                    </div><!-- row -->
+
+                    <div class="row">
+                      <div class="col-6 pm-LWmarginLabelLoan">
+                        <label class="pm-LWlabel" for="pm-LWloanAmount">Loan Amount</label>
+                      </div>
+                      <div class="col-6">
+                        <input id="pm-LWloanAmount" type="number" class="form-control pm-LWloanInput" placeholder="$0">
+                      </div>
+                    </div><!-- row -->
+
+                    <div class="row">
+                      <div  class="col-6">
+                      </div>
+                      <div class="col-6 pm-LWcalculateLink">
+                        <span id="pm-LWcalculateBox" class="border"></span>
+                        <span id="pm-LWcalculate"><a href="#">Calculate</a></span>
+                      </div>
+                    </div><!-- row -->
+
+                  </fieldset>
+                </form>
+                <!-- Loan Details(2) section ends -->
+
+                <!-- Borrower section starts -->
+                <form>
+                  <fieldset>
+                    <legend class="pm-LWheaders">Borrower</legend>
+
+                      <div class="row">
+                        <div class="col-6">
+                          <label class="pm-LWlabel" for="pm-LWborrowerType">Borrower Type</label>
                         </div>
-                      </div>
-                    </div>
-
-                    <div class="form-group row">
-                      <div class="col LWmarginLabelLoan">
-                        <label class="LWlabel" for="LWloanAmount">Loan Amount</label>
-                      </div>
-                      <div class="col">
-                        <input id="LWloanAmount" type="number" class="form-control LWloanInput" placeholder="$0">
-                         <div class="form-group form-check LWlinks LWcalculate" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="form-check-input" id="LWcalculate">
-                            <span><a href="#"><label class="form-check-label" for="LWcalculate">Calculate</label></a></span>
+                        <div class="col-6">
+                          <select id="pm-LWborrowerType" class="form-control pm-LWborrower">
+                            <option selected>Person</option>
+                            <option>...</option>
+                          </select>
                         </div>
-                      </div>
-                    </div>
+                      </div><!-- row -->
 
-                </fieldset>
-              </form>
+                      <div class="row pm-LWmarginb">
+                        <div class="col-6">
+                          <label class="pm-LWlabel" for="pm-LWbuyerContribution">Buyer's Contribution</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="number" class="form-control pm-LWborrowerInput" id="pm-LWbuyerContribution" placeholder="$0">
+                          <span class="pm-LWeditLinks"><a id="pm-LWborrowerEdit1" href="#">Edit</a></span>
+                        </div>
+                      </div><!-- row -->
 
-              <div class="">
+                      <div class="row pm-LWmarginb">
+                        <div class="col-6">
+                          <label class="pm-LWlabel" for="pm-LWcosolidationDebt">Consolidated Debt</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="number" style="background-color: #EEEEEE;" class="form-control pm-LWborrowerInput" id="pm-LWcosolidationDebt" placeholder="$0">
+                          <span class="pm-LWeditLinks"><a id="pm-LWborrowerEdit2" href="#">Edit</a></span>
+                        </div>
+                      </div><!-- row -->
 
+                      <div class="row pm-LWmarginb">
+                        <div class="col-6">
+                          <label class="pm-LWlabel" for="pm-LWfees">Fees</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="number" style="background-color: #EEEEEE;" class="form-control pm-LWborrowerInput" id="pm-LWfees" placeholder="$0">
+                          <span class="pm-LWeditLinks"><a id="pm-LWborrowerEdit1" href="#">Edit</a></span>
+                        </div>
+                      </div><!-- row -->
+
+                  </fieldset>
+                </form>
+                <!-- Borrower section starts -->
+            </div><!-- 2nd col ends -->
+
+
+            <div class="col-12 col-xl-4 col-md-12 border pm-LWsummaryTable">
+              <div class="pm-LWsummaryheader">
+                <h3>Summary</h3>
               </div>
-              <form class="form-inline LWborrowerBorder">
-                <fieldset>
-                  <legend class="LWheaders">Borrower</legend>
-
-                    <div class="form-group row">
-                      <div class="col">
-                        <label class="LWlabel" for="LWborrowerType">Borrower Type</label>
-                      </div>
-                      <div class="col">
-                        <select id="LWborrowerType" class="form-control LWborrower">
-                          <option selected>Person</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class=" form-group row LWmarginb">
-                      <div class="col col-lg-6">
-                        <label class="LWlabel" for="LWbuyerContribution">Buyer's Contribution</label>
-                      </div>
-                        <div class="col col-lg-3">
-                          <input type="number" class="form-control LWborrowerInput" id="LWbuyerContribution" placeholder="$0">
-                        </div>
-                        <div class="col col-lg-3">
-                          <span><a class="LWeditLinks" href="#">Edit</a></span>
-                        </div>
-                    </div>
-
-                    <div class=" form-group row LWmarginb ">
-                      <div class="col col-lg-6">
-                        <label class="LWlabel" for="LWcosolidationDebt">Consolidated Debt</label>
-                      </div>
-                        <div class="col col-lg-3">
-                          <input type="number" style="background-color: #EEEEEE;" class="form-control LWborrowerInput" id="LWcosolidationDebt" placeholder="$0">
-                        </div>
-                        <div class="col col-lg-3">
-                          <span><a class="LWeditLinks" href="#">Edit</a></span>
-                        </div>
-                    </div>
-
-                    <div class=" form-group row LWmarginb ">
-                      <div class="col col-lg-6">
-                        <label class="LWlabel" for="LWfees">Fees</label>
-                      </div>
-                        <div class="col col-lg-3">
-                          <input type="number" style="background-color: #EEEEEE;" class="form-control LWborrowerInput" id="LWfees" placeholder="$0">
-                        </div>
-                        <div class="col col-lg-3">
-                          <span><a class="LWeditLinks" href="#">Edit</a></span>
-                        </div>
-                    </div>
-
-                </fieldset>
-              </form>
-        </div><!-- Loan Details(2) section ends -->
-      </div><!-- Property details section ends -->
-    </div><!-- left main column ends -->
-
-    <div class="col-12 col-lg-4 LWsummaryTable"><!-- right main column starts-->
-      <div class="LWsummaryheader">
-        <h3>Summary</h3>
-      </div>
-            <table class="table">
-              <tbody>
-                <thead>
+              <table class="table">
+                <tbody>
+                  <thead>
+                    <tr>
+                      <th hidden class="pm-LWheaders">Summary</th>
+                    </tr>
+                  </thead>
                   <tr>
-                    <th hidden class="LWheaders">Summary</th>
-                  </tr>
-                </thead>
-                <tr>
-                  <td colspan="6">State Fees &amp; Charges <a href="#" class="badge badge-Primary">Details</a></td>
-                  <td data-type="number">$1,297</td>
-                </tr>
-                <tr>
-                  <td colspan="6">Loan Establishment Costs</td>
-                  <td data-type="number">$300,000</td>
-                </tr>
-                <tr>
-                 <td colspan="6">Total Securerities</td>
-                 <td data-type="number">$300,000</td>
-                </tr>
-                <div id="LWlendersInsurance" class="">
-                  <tr >
-                    <td colspan="6">Lenders Mortgage Insurance</td>
+                    <td colspan="6">State Fees &amp; Charges <a href="#" class="badge badge-Primary">Details</a></td>
                     <td data-type="number">$1,297</td>
                   </tr>
                   <tr>
-                    <td colspan="3">
-                      <input type="checkbox" name="Mortgage Insurance" value="edit"> Edit<br>
-                    </td>
-                    <td colspan="3">
-                      <input type="checkbox" name="Mortgage Insurance" value="capitalize"> Capitalize<br>
-                    </td>
-                    <td colspan="3"></td>
+                    <td colspan="6">Loan Establishment Costs</td>
+                    <td data-type="number">$300,000</td>
                   </tr>
-                </div>
+                  <tr>
+                   <td colspan="6">Total Securerities</td>
+                   <td data-type="number">$300,000</td>
+                  </tr>
+                  <div id="pm-LWlendersInsurance" class="">
+                    <tr >
+                      <td colspan="6">Lenders Mortgage Insurance</br></td>
+                      <td data-type="number">$1,297</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                        <input id="pm-LWinsuranceEdit" type="checkbox" name="Mortgage Insurance">
+                        <label for="pm-LWinsuranceEdit"> Edit</label><br>
+                      </td>
+                      <td colspan="3">
+                        <input id="pm-LWinsuranceCapitalize" type="checkbox" name="Mortgage Insurance">
+                        <label for="pm-LWinsuranceCapitalize"> Capitalize</label><br>
+                      </td>
+                      <td colspan="3"></td>
+                    </tr>
+                  </div>
+                  <tr id="pm-LWtotalRepayment">
+                    <td colspan="6">Total Monthly Repayment</td>
+                    <td data-type="number">$2,400</td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">Final Funds Required</td>
+                    <td data-type="number">$890,297</td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">Final Buyer's Contribution</td>
+                    <td data-type="number">$0</td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">Final Loan Amount</td>
+                    <td data-type="number">$1,297</td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">Final LVR</td>
+                    <td data-type="number">$0</td>
+                  </tr>
+                  <tr style="background-color: #B8E986;">
+                    <td colspan="6">Surplus/Shortfall</td>
+                    <td data-type="number">$22,046</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- 3nd col ends -->
 
-
-                <tr id="LWtotalRepayment">
-                  <td colspan="6">Total Monthly Repayment</td>
-                  <td data-type="number">$2,400</td>
-                </tr>
-                <tr>
-                  <td colspan="6">Final Funds Required</td>
-                  <td data-type="number">$890,297</td>
-                </tr>
-                <tr>
-                  <td colspan="6">Final Buyer's Contribution</td>
-                  <td data-type="number">$0</td>
-                </tr>
-                <tr>
-                  <td colspan="6">Final Loan Amount</td>
-                  <td data-type="number">$1,297</td>
-                </tr>
-                <tr>
-                  <td colspan="6">Final LVR</td>
-                  <td data-type="number">$0</td>
-                </tr>
-                <tr style="background-color: #B8E986;">
-                  <td colspan="6">Surplus/Shortfall</td>
-                  <td data-type="number">$22,046</td>
-                </tr>
-              </tbody>
-            </table>
-          </div><!-- right main column ends-->
-        </div> <!--row ends -->
-    </div><!-- container -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </main>
     </body>
   </html>
