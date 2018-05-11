@@ -4,6 +4,17 @@ class names & ids names rules:
 2) LW stands for Loan Worksheet +
 3) Section name - camelCase */
 
+
+/* turned-off number input spinners  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+/* ********************************/
+
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -11,6 +22,8 @@ body {
 /* Loan work sheet
 ---------------------------------
 --------------------------------- */
+
+
 
 input, textarea, select, button {
   font-family: inherit;
@@ -153,7 +166,6 @@ input, textarea, select, button {
     font-weight: 600;
     margin-left: 91%;
 }
-
 /* Borrower section
 --------------------------------- */
 .pm-LWborrower {
@@ -193,6 +205,12 @@ input, textarea, select, button {
 --------------------------------- */
 
 /* Summary Table  */
+
+#removeBorderTop {
+  border: 2px solid #fff;
+  border-right-width: 0;
+  border-left-width: 0;
+}
 .pm-LWsummaryheader h3 {
     font-size: 1.125em;
     color: #222;
@@ -266,10 +284,11 @@ tr:hover {
 @media ( max-width: 1090px ) {
 
   .pm-LWpropertyInput {
-    margin-left: 61%;
+    margin-left: -10%;
   }
   .pm-LWpropertyLink {
-    margin-left: 85%;
+    margin-left: 56%;
+    margin-top: -4%;
   }
   .pm-LWeditLinks {
     margin-top: -12%;
@@ -316,8 +335,8 @@ tr:hover {
     border-right-width: 0;
   }
   .pm-LWeditLinks {
-    margin-top: -11%;
-    margin-left: 41%;
+      margin-top: -14%;
+      margin-left: 62%;
   }
 
 }
