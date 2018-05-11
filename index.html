@@ -14,8 +14,8 @@
   <title>Loan Worsheet</title>
 </head>
 
-<body>
 
+  <body>
     <!--  responsive behaviour   -->
     <header role="banner">
       <div class="container">
@@ -193,8 +193,12 @@
                       <div  class="col-6">
                       </div>
                       <div class="col-6 pm-LWcalculateLink">
-                        <span id="pm-LWcalculateBox" class="border"></span>
-                        <span id="pm-LWcalculate"><a href="#">Calculate</a></span>
+                        <div class="md-checkbox">
+                          <input id="pm-LWcalculateBox" type="checkbox" name="loan worksheet calculate input" >
+                          <!-- <input  class="border"></span> -->
+                          <span id="pm-LWcalculate"><a href="#">Calculate</a></span>
+                        </div>
+
                       </div>
                     </div><!-- row -->
 
@@ -283,7 +287,7 @@
                       <td colspan="6">Lenders Mortgage Insurance</br></td>
                       <td data-type="number">$1,297</td>
                     </tr>
-                    <tr>
+                    <tr id="removeBorderTop">
                       <td colspan="3">
                         <input id="pm-LWinsuranceEdit" type="checkbox" name="Mortgage Insurance">
                         <label for="pm-LWinsuranceEdit"> Edit</label><br>
