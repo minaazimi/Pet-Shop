@@ -3,3 +3,5 @@ https://www.ebay.com.au/itm/20Pcs-Instant-Films-Photo-Sticker-For-FujiFilm-Insta
 https://www.ebay.com.au/itm/Fujifilm-Fuji-Instax-WIDE-300-Camera-Instant-210-Wide-Film-Photos-Free-Gift/142361427151?hash=item212566fccf%3Am%3AmvGI-6U1C8hHTxQCBIxuf-w&var=441385619513
 
 https://skillcrush.com/2018/06/18/projects-you-can-do-with-javascript/
+
+https://www.udemy.com/javascript-for-absolute-beginners-learn-the-basics/
