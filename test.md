@@ -5,3 +5,46 @@ https://www.ebay.com.au/itm/Fujifilm-Fuji-Instax-WIDE-300-Camera-Instant-210-Wid
 https://skillcrush.com/2018/06/18/projects-you-can-do-with-javascript/
 
 https://www.udemy.com/javascript-for-absolute-beginners-learn-the-basics/
+
+
+
+
+<!--<button id="pm-LS-btnSelectSubmitToLodgement" type="submit" class="btn pm-btn-calculate pm-ls-submit-buttons" data-toggle="dropdown"
+                                        ng-disabled="!canSubmitToLodgement()" ng-click="toggleshowSubmitList()">
+                                <div id="pm-LS-divSubmitToLodgementDisplayDrpButton" class="pm-ls-lodegement-summary-btn-group-btn" title="Submit to Lodgement">
+                                    Submit to Lodgement
+                                </div>
+                                <i ng-if="showSubmitList" class="material-icons">arrow_drop_down</i>
+                                <i ng-if="!showSubmitList" class="material-icons">arrow_drop_up</i>                                                                    
+                            </button>-->
+                            
+                            <div class="pm-btn-calculate pm-ls-submit-buttons" ng-disabled="!canSubmitToLodgement()" ng-click="toggleshowSubmitList()">
+                                <div id="pm-LS-divSubmitToLodgementDisplayDrpButton" class="pm-ls-lodegement-summary-btn-group-btn" title="Submit to Lodgement">
+                                    Submit to Lodgement
+                                </div>
+                                <i ng-if="!showSubmitList" class="material-icons">arrow_drop_down</i>
+                                <i ng-if="showSubmitList" class="material-icons">arrow_drop_up</i>
+                            </div>
+
+                            <ul class="dropdown-menu" style="width: 100%; padding: 0; border-radius: 4px;" ng-show="showSubmitList">
+                                <li class="pm-ls-submit-lodgement-li" style="border-bottom: 1px solid #ddd;">
+                                    <a ng-click="submitToApplyonline()" id="pm-LS-btnSubmitToApplyonline" title="Submit to Applyonline">
+                                        <img class="applyonline-image">
+                                        <span>Submit to Applyonline</span>
+                                    </a>
+                                </li>
+                                <li class="pm-ls-submit-lodgement-li">
+                                    <a ng-click="submitToloanapp()" id="pm-LS-btnSubmitLoanapp">
+                                        <img class="loanapp-image" style="margin-right: 16px;">Submit to Loanapp
+                                    </a>
+
+                                </li>
+                            </ul>
+                            
+                            
+                            
+                            $scope.showSubmitList = true;
+
+            $scope.toggleshowSubmitList = function () {
+                $scope.showSubmitList = !$scope.showSubmitList;
+            }
